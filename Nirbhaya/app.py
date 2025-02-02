@@ -1,11 +1,11 @@
 from datetime import datetime
 from flask import Flask, request, jsonify
 import googlemaps
-from flask_cors import CORS
+from flask_cors import CORS # type: ignore
 import firebase_admin
 from firebase_admin import credentials, firestore, auth, db
 import os
-from dotenv import load_dotenv
+from dotenv import load_dotenv # type: ignore
 
 # Load environment variables
 load_dotenv()
